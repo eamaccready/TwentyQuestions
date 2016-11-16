@@ -1,0 +1,12 @@
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\bin\Debug\TwentyQuestions.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\bin\Debug\TwentyQuestions.exe
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\bin\Debug\TwentyQuestions.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.Form1.resources
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.exe
+c:\users\administrator\documents\visual studio 2015\Projects\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.pdb
+C:\repos\TwentyQuestions\TwentyQuestions\bin\Debug\TwentyQuestions.exe.config
+C:\repos\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.exe
+C:\repos\TwentyQuestions\TwentyQuestions\obj\Debug\TwentyQuestions.pdb
