@@ -31,6 +31,7 @@
             this.yesButton = new System.Windows.Forms.Button();
             this.noButton = new System.Windows.Forms.Button();
             this.questionLabel = new System.Windows.Forms.Label();
+            this.Title = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // yesButton
@@ -56,17 +57,28 @@
             // questionLabel
             // 
             this.questionLabel.AutoSize = true;
-            this.questionLabel.Location = new System.Drawing.Point(108, 31);
+            this.questionLabel.Location = new System.Drawing.Point(108, 130);
             this.questionLabel.Name = "questionLabel";
             this.questionLabel.Size = new System.Drawing.Size(51, 20);
             this.questionLabel.TabIndex = 2;
             this.questionLabel.Text = "label1";
+            // 
+            // Title
+            // 
+            this.Title.AutoSize = true;
+            this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Title.Location = new System.Drawing.Point(108, 61);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(277, 29);
+            this.Title.TabIndex = 3;
+            this.Title.Text = "Twenty Questions Game";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 461);
+            this.Controls.Add(this.Title);
             this.Controls.Add(this.questionLabel);
             this.Controls.Add(this.noButton);
             this.Controls.Add(this.yesButton);
@@ -83,6 +95,7 @@
         private System.Windows.Forms.Button yesButton;
         private System.Windows.Forms.Button noButton;
         private System.Windows.Forms.Label questionLabel;
+        private System.Windows.Forms.Label Title;
     }
 }
 

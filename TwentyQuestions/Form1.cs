@@ -66,10 +66,10 @@ namespace TwentyQuestions
                 if (add.ShowDialog() == DialogResult.OK) // need to get user input from AddNewItem
                 
                     //Thank user for adding a new question.
-                if(MessageBox.Show("Thank you for adding a new question!")== DialogResult.OK)
-              
-                //Create message box to see if they want to play another game.
-                if (MessageBox.Show("Do you want to play again?", "Twenty questions", MessageBoxButtons.YesNo) == DialogResult.No)
+                if(MessageBox.Show("Thank you for adding a new question!")== DialogResult.OK) // try to reference NewNode.question next!
+
+                        //Create message box to see if they want to play another game.
+                        if (MessageBox.Show("Do you want to play again?", "Twenty questions", MessageBoxButtons.YesNo) == DialogResult.No)
                 {
                     this.DialogResult = DialogResult.Cancel;
                     this.Close();

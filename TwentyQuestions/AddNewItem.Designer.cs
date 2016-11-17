@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewItem));
             this.AddNewLabel = new System.Windows.Forms.Label();
             this.AddNewText = new System.Windows.Forms.TextBox();
             this.AddNewButton = new System.Windows.Forms.Button();
@@ -67,7 +66,7 @@
             // AddNewPic
             // 
             this.AddNewPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AddNewPic.Image = ((System.Drawing.Image)(resources.GetObject("AddNewPic.Image")));
+            this.AddNewPic.Image = global::TwentyQuestions.Properties.Resources.johnny5;
             this.AddNewPic.Location = new System.Drawing.Point(160, 12);
             this.AddNewPic.Name = "AddNewPic";
             this.AddNewPic.Size = new System.Drawing.Size(127, 154);
