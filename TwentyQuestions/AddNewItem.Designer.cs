@@ -96,8 +96,8 @@
         #endregion
 
         private System.Windows.Forms.Label AddNewLabel;
-        private System.Windows.Forms.TextBox AddNewText;
         private System.Windows.Forms.Button AddNewButton;
         private System.Windows.Forms.PictureBox AddNewPic;
+        public System.Windows.Forms.TextBox AddNewText;
     }
 }

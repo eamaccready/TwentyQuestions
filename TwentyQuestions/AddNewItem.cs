@@ -40,8 +40,6 @@ namespace TwentyQuestions
             string newQuestion = AddNewText.Text;
             f1.InsertQuestion(newQuestion);
             Close();// won't always work in debug mode.
-
-            // needs to be a string and then make a question.
         }
         
     }
