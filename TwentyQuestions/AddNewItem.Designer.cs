@@ -36,7 +36,7 @@
             // AddNewLabel
             // 
             this.AddNewLabel.AutoSize = true;
-            this.AddNewLabel.Location = new System.Drawing.Point(112, 22);
+            this.AddNewLabel.Location = new System.Drawing.Point(48, 19);
             this.AddNewLabel.Name = "AddNewLabel";
             this.AddNewLabel.Size = new System.Drawing.Size(51, 20);
             this.AddNewLabel.TabIndex = 0;
@@ -68,6 +68,7 @@
             this.Controls.Add(this.AddNewLabel);
             this.Name = "AddNewItem";
             this.Text = "AddNewItem";
+            this.Load += new System.EventHandler(this.AddNewItem_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -16,5 +16,10 @@ namespace TwentyQuestions
         {
             InitializeComponent();
         }
+
+        private void AddNewItem_Load(object sender, EventArgs e)
+        {
+            AddNewLabel.Text = "Need INPUT!! Need INPUT!!!";
+        }
     }
 }
