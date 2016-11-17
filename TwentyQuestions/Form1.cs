@@ -36,15 +36,13 @@ namespace TwentyQuestions
         {
             // is leaf? 
 
-            //
-            //if (current.isleaf())// not recognising 
-            //{
+            if (current.isleaf())
+            {
                 //yes? I rock!
-                MessageBox.Show("Yay! I guessed it!");// currently shows for both options.
+                //MessageBox.Show("Yay! I guessed it!");// currently shows for both options.
                 // then ask " Do you want to play again?"
-                if (MessageBox.Show("Do you want to play again?", "Twenty questions", MessageBoxButtons.YesNo) == DialogResult.No)
+                if (MessageBox.Show("Do you want to play again?", "Twenty questions", MessageBoxButtons.YesNo) == DialogResult.No)// still needs DialogResult.yes
                 {
-
                     this.DialogResult = DialogResult.Cancel;
                     this.Close();
                 }
@@ -52,36 +50,42 @@ namespace TwentyQuestions
                 // no? ask next question.
                 // else 
                 //{
-                //New game?
+                //New game? current = root
 
                 //}
+            }
 
-               // else
-                //{
-                   // ; //Next yes question.
-                //}
-            //}
+            else
+            {
+                current = current.yes;
+                questionLabel.Text = current.question;
+            }
+                
         }
 
         private void noButton_Click(object sender, EventArgs e)
         {
-            //am I a leaf?
-            //if(current.isleaf())
-            // no: ask next question.
-            // yes: it's new, go learn stuff.
-
-
-            // then ask "Do you want to play again?"
-           if(MessageBox.Show("Do you want to play again?", "Twenty questions", MessageBoxButtons.YesNo) == DialogResult.No)
+            // is leaf?
+            if (current.isleaf())
+            { // yes: it's new, go learn stuff.
+                AddNewItem add = new AddNewItem();//flips to new window to enter a new question.
+                //.Text = "Need INPUT!! Need INPUT!!!";// won't print to label. Figure out!!!!
+                if (add.ShowDialog() == DialogResult.OK);
+                
+                //MessageBox.Show();
+                // then ask "Do you want to play again?"
+                if (MessageBox.Show("Do you want to play again?", "Twenty questions", MessageBoxButtons.YesNo) == DialogResult.No)
                 {
-                this.DialogResult = DialogResult.Cancel;
-                this.Close();
-                //this. DialogResult = DialogResult. // other option/not cancel.
+                    this.DialogResult = DialogResult.Cancel;
+                    this.Close();
+                }
+                //else new game. {current = root;}
             }
-
-            AddNewItem add = new AddNewItem();//flips to new window
-            if (add.ShowDialog() == DialogResult.OK);// both ways add new window now.
-            //else cancel?
+            else
+            {
+                current = current.no;
+                questionLabel.Text = current.question;
+            }
         }
-     }
+    }
 }

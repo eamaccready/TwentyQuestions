@@ -9,9 +9,10 @@ namespace TwentyQuestions
     class Question
     {
         public string question;
-        public Question yes;
-        public Question no;
+        public Question yes; //left
+        public Question no;  //right
 
+        //Constructor here?
 
         public bool isleaf()
         {
