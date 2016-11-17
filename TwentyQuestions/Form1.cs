@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TwentyQuestions
@@ -22,7 +15,7 @@ namespace TwentyQuestions
         private void Form1_Load(object sender, EventArgs e)
         {
             root = new Question();
-            root.question = "Is it vegetarian?";
+            root.question = "Is it vegan?";
             root.yes = new Question();
             root.yes.question = "Is it a fruit?"; // change questions to theme.
             root.no = new Question();
@@ -69,10 +62,13 @@ namespace TwentyQuestions
             if (current.isleaf())
             { 
                 // yes: it's new, go learn stuff.
-                AddNewItem add = new AddNewItem();//flips to new window to enter a new question.
-                if (add.ShowDialog() == DialogResult.OK)
-
-                // then ask "Do you want to play again?"
+                AddNewItem add = new AddNewItem(this);//adds new node to tree based on user input. Passes string from text box.
+                if (add.ShowDialog() == DialogResult.OK) // need to get user input from AddNewItem
+                
+                    //Thank user for adding a new question.
+                if(MessageBox.Show("Thank you for adding a new question!")== DialogResult.OK)
+              
+                //Create message box to see if they want to play another game.
                 if (MessageBox.Show("Do you want to play again?", "Twenty questions", MessageBoxButtons.YesNo) == DialogResult.No)
                 {
                     this.DialogResult = DialogResult.Cancel;
@@ -89,6 +85,13 @@ namespace TwentyQuestions
                 current = current.no;
                 questionLabel.Text = current.question;
             }
+        }
+
+        public void InsertQuestion(string question)
+        {
+            Question newNode = new Question();
+            newNode.question = question;
+            current.no = newNode;
         }
     }
 }
