@@ -12,7 +12,18 @@ namespace TwentyQuestions
         public Question yes; //left
         public Question no;  //right
 
-        //Constructor here?
+        //Constructor here!!!! Do Do not call questions or whatever, will cause recursion/stack overflow!
+
+        public Question()
+        {
+                
+        }
+
+        public Question(string newquestion)
+        {
+            question = newquestion;
+            //need to set .yes and .no?    
+        }
 
         public bool isleaf()
         {

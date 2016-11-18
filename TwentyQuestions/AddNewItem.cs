@@ -12,17 +12,20 @@ namespace TwentyQuestions
 {
     public partial class AddNewItem : Form
     {
-        Form1 f1;
+        //Form1 f1;
 
-        public AddNewItem(Form1 parent)
+        public AddNewItem()//(Form1 parent)
         {
             InitializeComponent();
-            f1 = parent;
+            //f1 = parent;
         } 
 
         private void AddNewItem_Load(object sender, EventArgs e)
         {
-            AddNewLabel.Text = "Need INPUT!! Need INPUT!!! \nPlease enter a new question below.";
+            AddNewLabel.Text = "INPUT!! Need INPUT!!!";
+            LabelYes.Text = "Please tell me what you were thinking of.";
+            LabelNo.Text = "Please input a question that would help me guess next time!";
+           
         }
 
         private void AddNewText_TextChanged(object sender, EventArgs e)
@@ -37,10 +40,29 @@ namespace TwentyQuestions
         private void AddNewButton_Click(object sender, EventArgs e)
         {
             // inserts newQueston as new child question.no
-            string newQuestion = AddNewText.Text;
-            f1.InsertQuestion(newQuestion);
+            //string newQuestion = AddNewText.Text;
+            //f1.InsertQuestion(newQuestion);
             Close();// won't always work in debug mode.
         }
-        
+
+        /*private void label1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }*/
+
+        private void LabelYes_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void LabelNo_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
