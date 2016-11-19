@@ -19,10 +19,11 @@ namespace TwentyQuestions
                 
         }
 
-        public Question(string newquestion)
+        public Question(string newquestion, Question yes, Question no)
         {
             question = newquestion;
-            //need to set .yes and .no?    
+            yes = null;//do we need these is automatic...
+            no = null;//This too!
         }
 
         public bool isleaf()
